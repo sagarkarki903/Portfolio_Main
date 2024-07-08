@@ -31,7 +31,7 @@ function NavBar() {
                      <SignIn/>
                 </div>
 
-                <div className="h-6 w-6 md:hidden" onClick={handleClickBurger}>
+                <div className="h-10 w-10 md:hidden" onClick={handleClickBurger}>
                 {burger_open ? (
                     // <img src="images\forks.png" alt="hamburger_menu " /> 
                     <Lottie animationData={cross} loop={false}/> 
