@@ -2,7 +2,7 @@
 export default function Story(){
     return(
         <>
-        <p>
+        <p className="mt-10">
             Introduction
                 This book is a collection of eight entertaining short stories in English. The
                 stories are written for intermediate learners, equivalent to B1-B2 on the

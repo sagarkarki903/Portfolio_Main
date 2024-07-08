@@ -8,8 +8,11 @@ import cross from "./lottie_animations/cross.json"
 
 function NavBar() {
     const [burger_open, setBurgerOpen] = useState(false);
+    const [burger_menu, setBurgerMenu] = useState(false);
     const handleClickBurger = () => {
         setBurgerOpen(prevState => !prevState);
+        setBurgerMenu(prevState => !prevState);
+        
 
       };
     
@@ -19,7 +22,7 @@ function NavBar() {
         <div className="flex items-center justify-between p-6 bg-orange-950 sticky top-0 z-[20] mx-auto ">
       
                 <Logo />
-                <div className="bg-slate-600 md:block hidden">
+                <div className=" md:block hidden">
                     <ul className="md:inline-flex space-x-20">
                         <li>About</li>
                         <li>Experiences</li>
@@ -31,7 +34,7 @@ function NavBar() {
                      <SignIn/>
                 </div>
 
-                <div className="h-10 w-10 md:hidden" onClick={handleClickBurger}>
+                <div className="h-11 w-11 md:hidden" onClick={handleClickBurger}>
                 {burger_open ? (
                     // <img src="images\forks.png" alt="hamburger_menu " /> 
                     <Lottie animationData={cross} loop={false}/> 
@@ -45,6 +48,20 @@ function NavBar() {
                
               
         </div>
+
+        {burger_menu && (
+            <div className="h-56 w-full bg-orange-800 flex justify-center fixed  md:hidden ">
+            <ul className="flex flex-col justify-center gap-y-4">
+                    <li>About</li>
+                    <li>Experiences</li>
+                    <li>Projects</li>
+                    <li>About</li>
+             </ul>
+
+        </div>
+        )}
+       
+
         </>
 
     );
