@@ -5,6 +5,7 @@ import Story from './Story'
 import Lottie from "lottie-react";
 import OnProgress from "./OnProgress.json"
 
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -18,6 +19,7 @@ function App() {
               
               
                <NavBar />
+
 
               <div>
                <Story />

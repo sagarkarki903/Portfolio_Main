@@ -5,6 +5,7 @@ import { useState } from "react";
 import Lottie from "lottie-react";
 import burger from "./lottie_animations/burger.json"
 import cross from "./lottie_animations/cross.json"
+import BurgerMenu from "./BurgerMenu";
 
 function NavBar() {
     const [burger_open, setBurgerOpen] = useState(false);
@@ -19,7 +20,7 @@ function NavBar() {
     
     return(
         <>
-        <div className="flex items-center justify-between p-6 bg-orange-950 sticky top-0 z-[20] mx-auto ">
+        <div className="flex items-center justify-between p-6 bg-orange-950 sticky top-0 z-[20] mx-auto h-16">
       
                 <Logo />
                 <div className=" md:block hidden">
@@ -34,7 +35,7 @@ function NavBar() {
                      <SignIn/>
                 </div>
 
-                <div className="h-11 w-11 md:hidden" onClick={handleClickBurger}>
+                <div className="h-10 w-11  md:hidden flex justify-center items-center" onClick={handleClickBurger}>
                 {burger_open ? (
                     // <img src="images\forks.png" alt="hamburger_menu " /> 
                     <Lottie animationData={cross} loop={false}/> 
@@ -50,15 +51,8 @@ function NavBar() {
         </div>
 
         {burger_menu && (
-            <div className="h-56 w-full bg-orange-800 flex justify-center fixed  md:hidden ">
-            <ul className="flex flex-col justify-center gap-y-4">
-                    <li>About</li>
-                    <li>Experiences</li>
-                    <li>Projects</li>
-                    <li>About</li>
-             </ul>
-
-        </div>
+           <BurgerMenu isOpen={burger_open} />
+          
         )}
        
 
