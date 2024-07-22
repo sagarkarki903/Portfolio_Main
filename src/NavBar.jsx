@@ -9,12 +9,9 @@ import BurgerMenu from "./BurgerMenu";
 
 function NavBar() {
     const [burger_open, setBurgerOpen] = useState(false);
-    const [burger_menu, setBurgerMenu] = useState(false);
+   
     const handleClickBurger = () => {
         setBurgerOpen(prevState => !prevState);
-        setBurgerMenu(prevState => !prevState);
-        
-
       };
     
     
@@ -50,11 +47,15 @@ function NavBar() {
               
         </div>
 
-        {burger_menu && (
-           <BurgerMenu isOpen={burger_open} />
-          
-        )}
-       
+
+        
+        <div
+        className={`h-56 w-full bg-orange-800 flex justify-center fixed top-10 md:hidden origin-top duration-500 transform ${
+          burger_open ? "translate-y-0" : "-translate-y-full"
+        }`}
+      >
+        <BurgerMenu />
+      </div>
 
         </>
 

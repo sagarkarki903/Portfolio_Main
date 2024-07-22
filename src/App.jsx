@@ -4,6 +4,7 @@ import NavBar from './NavBar'
 import Story from './Story'
 import Lottie from "lottie-react";
 import OnProgress from "./OnProgress.json"
+import Buttons from './Buttons';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
               
                <NavBar />
 
+                <Buttons />
 
               <div>
                <Story />
