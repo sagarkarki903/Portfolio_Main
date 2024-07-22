@@ -17,7 +17,7 @@ function NavBar() {
     
     return(
         <>
-        <div className="flex items-center justify-between p-6 bg-orange-950 sticky top-0 z-[20] mx-auto h-16">
+        <div className="flex items-center justify-between  p-6 bg-orange-950 sticky  top-0 z-[20] mx-auto h-16">
       
                 <Logo />
                 <div className=" md:block hidden">
@@ -50,8 +50,8 @@ function NavBar() {
 
         
         <div
-        className={`h-56 w-full bg-orange-800 flex justify-center fixed top-10 md:hidden origin-top duration-500 transform ${
-          burger_open ? "translate-y-0" : "-translate-y-full"
+        className={`h-56 w-48 bg-orange-800 flex justify-center fixed right-0 top-16 md:hidden duration-500 trasnform ${
+          burger_open ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <BurgerMenu />

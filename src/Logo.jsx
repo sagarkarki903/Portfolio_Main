@@ -1,8 +1,17 @@
+import { Link } from "react-router-dom"
+
 export default function Logo(){
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      };
+
     return(
-        <div className="logo w-24 h-10 flex justify-center items-center font-extrabold text-lg"  >
-            {/* <a href="/"><img src="images\adobe_logo.png" alt="logo_sagark" /> </a> */}
-            <a href="/"> Sagar K </a>
+        <div className="logo w-24 h-10 flex justify-center items-center font-extrabold text-lg" onClick={scrollToTop}  >
+    
+           <Link to={`/`}>Sagar K</Link>
         </div>
     )
 }
