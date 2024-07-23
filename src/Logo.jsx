@@ -9,7 +9,7 @@ export default function Logo(){
       };
 
     return(
-        <div className="logo w-24 h-10 flex justify-center items-center font-extrabold text-lg" onClick={scrollToTop}  >
+        <div className="logo w-24 h-10 flex  items-center font-extrabold text-lg" onClick={scrollToTop}  >
     
            <Link to={`/`}>Sagar K</Link>
         </div>
