@@ -19,10 +19,7 @@ function App() {
         <div className="container mx-auto px-0 py-0 bg-[#1E293B] shadow-md rounded-lg">
               
                <NavBar />
-               <Link to={`/admin`}><button className='bg-amber-700'>Admin</button></Link>
-               <br />
-               <br />
-               <Link to={`/log`}><button className='bg-green-700'>Admin</button></Link>
+              
                <div>
                 <Outlet />
               </div>

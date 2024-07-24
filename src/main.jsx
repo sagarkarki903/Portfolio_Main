@@ -7,7 +7,6 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Projects from './pages/Projects.jsx'
 import Admin from './pages/Admin.jsx'
-import LogIn from './pages/LogIn.jsx'
 import Contact from './pages/Contact.jsx'
 import Content from './pages/Content.jsx'
 import LogInPage from './pages/LogInPage.jsx'
@@ -29,12 +28,6 @@ const router = createBrowserRouter([
       }
       
     ]
-  },
-
-  {
-    path: "/login",
-    element: <LogIn />
-
   },
 
   {
