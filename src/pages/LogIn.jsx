@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import BurgerMenu from '../BurgerMenu'
+
 
 export default function LogIn() {
   return (

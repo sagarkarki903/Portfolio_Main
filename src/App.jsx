@@ -20,6 +20,9 @@ function App() {
               
                <NavBar />
                <Link to={`/admin`}><button className='bg-amber-700'>Admin</button></Link>
+               <br />
+               <br />
+               <Link to={`/log`}><button className='bg-green-700'>Admin</button></Link>
                <div>
                 <Outlet />
               </div>
