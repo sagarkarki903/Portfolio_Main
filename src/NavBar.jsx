@@ -20,16 +20,11 @@ function NavBar() {
         <div className="flex items-center justify-between  pl-2 pr-4 bg-orange-950 sticky  top-0 z-[20] mx-auto h-16">
       
                 <Logo />
-                <div className=" md:block hidden">
+                
+                <div className="md:block hidden ">
                     <ul className="md:inline-flex space-x-20">
-                        <li>About</li>
-                        <li>Experiences</li>
-                        <li>Projects</li>
-                        <li>About</li>
+                      <BurgerMenu />
                     </ul>
-                </div>
-                <div className="md:block hidden">
-                     <SignIn/>
                 </div>
 
                 <div className="h-10 w-11  md:hidden flex justify-center items-center" onClick={handleClickBurger}>
@@ -53,7 +48,9 @@ function NavBar() {
           burger_open ? "translate-y-0" : "-translate-y-full"
         }`}
       >
+      <ul className="flex flex-col md:inline-flex md:space-x-20 justify-center gap-y-4 md:gap-y-0">
         <BurgerMenu  setBBurgerOpen={setBurgerOpen}/>
+        </ul>
       </div>
 
         </>
