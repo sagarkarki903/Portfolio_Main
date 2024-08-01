@@ -23,7 +23,7 @@ function NavBar() {
                 
                 <div className="md:block hidden ">
                     <ul className="md:inline-flex space-x-20">
-                      <BurgerMenu />
+                      <BurgerMenu burgerOpen={burger_open} setBurgerOpen={setBurgerOpen} />
                     </ul>
                 </div>
 
@@ -49,7 +49,7 @@ function NavBar() {
         }`}
       >
       <ul className="flex flex-col md:inline-flex md:space-x-20 justify-center gap-y-4 md:gap-y-0">
-        <BurgerMenu  setBBurgerOpen={setBurgerOpen}/>
+        <BurgerMenu burgerOpen={burger_open} setBurgerOpen={setBurgerOpen}/>
         </ul>
       </div>
 

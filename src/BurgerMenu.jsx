@@ -4,12 +4,12 @@ import {HashLink} from 'react-router-hash-link'
 import NavBar from "./NavBar";
 
 
-export default function BurgerMenu({setBBurgerOpen}){
+export default function BurgerMenu({ burgerOpen, setBurgerOpen }){
 
         // const [burger_open, setBurgerOpen] = useState(false);
    
     const handleLinkClick = () => {
-        setBBurgerOpen(prevState => !prevState);
+      setBurgerOpen(!burgerOpen);
       };
     
 
