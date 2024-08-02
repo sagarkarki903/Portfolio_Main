@@ -21,8 +21,8 @@ function NavBar() {
       
                 <Logo />
                 
-                <div className="md:block hidden ">
-                    <ul className="md:inline-flex space-x-20">
+                <div className="md:block hidden">
+                    <ul className="md:inline-flex space-x-20 items-center">
                       <BurgerMenu burgerOpen={burger_open} setBurgerOpen={setBurgerOpen} />
                     </ul>
                 </div>
